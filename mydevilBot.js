@@ -17,7 +17,7 @@ async function loginUser (elementLogin, elementPassword, login, password, browse
 async function main() {
     const browser = await buildBrowser();
 
-    await browser.get('https://panel33.mydevil.net/login/?next=/');
+    await browser.get(process.env.MYDEVIL_LINK);
 
     const elementLogin = "id_username";
     const elementPassword = "id_password";
