@@ -17,7 +17,7 @@ async function loginStudent (elementLogin, elementPassword, login, password, bro
 async function main() {
     const browser = await buildBrowser();
 
-    await browser.get('https://elogin.put.poznan.pl/');
+    await browser.get(process.env.PP_LINK);
 
     const elementLogin = "login";
     const elementPassword = "password";
